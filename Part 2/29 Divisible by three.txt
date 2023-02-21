@@ -1,0 +1,33 @@
+//A method public static void divisibleByThreeInRange
+//(int beginning, int end) that prints all the numbers divisible by 
+//three in the given range. The numbers are to be printed in order 
+//from the smallest to the greatest.
+
+import java.util.Scanner;
+ 
+public class Application {
+
+    public static void main(String[] args) {
+
+Scanner scanner = new Scanner(System.in);
+
+divisibleByThreeInRange(1, 1000);
+        }
+    public static void divisibleByThreeInRange(int beginning, int end){
+        
+       while (beginning <= end)
+       {
+        for(int i=0;beginning<=end; beginning++)
+        {
+           int remainder =beginning % 3;
+           if (remainder == 0){
+               System.out.println(beginning);
+                              }
+        }
+        if (beginning == end)
+        {
+        break;
+        }
+       }
+   }
+}

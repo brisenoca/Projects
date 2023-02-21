@@ -1,0 +1,38 @@
+//Implement a program which calculates the sum of a closed interval, 
+//and prints it. Expect the user to write the smaller number first and 
+//then the larger number.
+
+import java.util.Scanner;
+ 
+public class Application {
+
+    public static void main(String[] args) {
+
+
+Scanner scanner = new Scanner(System.in);
+
+int sum = 0;
+
+System.out.println("First number?");
+int small= Integer.valueOf(scanner.nextLine());
+
+System.out.println("Last number?");
+int large = Integer.valueOf(scanner.nextLine());
+
+//small number to large number - counter
+while (true){
+if (small <= large){
+    //equation for ranged sequence sum. Small is added to sum.
+    sum = small + sum;
+    //Small number adds one until it is equal to large
+    small++;     
+}
+//Breaks out of loop when small is equal to large.
+else {
+    break;
+}
+//Prints sum
+ System.out.println(sum);
+}
+             }
+         }

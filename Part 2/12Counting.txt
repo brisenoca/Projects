@@ -1,0 +1,20 @@
+
+import java.util.Scanner;
+
+public class Counting {
+
+    public static void main(String[] args) {
+
+        // Write the code here. You can run the code by 
+        // selecting Run->Run File from the menu or by pressing Shift+F6
+        Scanner scanner = new Scanner(System.in);
+
+        int num = Integer.valueOf(scanner.nextLine());
+
+        for (int i = 0; i < num; i++) {
+            System.out.println(i);
+        }
+
+        System.out.println(num);
+    }
+}

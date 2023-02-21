@@ -1,0 +1,29 @@
+\\Part 1 - Reading:
+\\A program that asks the user for numbers 
+\\(the program first prints "Write numbers: ")
+\\until the user gives the number -1. When the user
+\\writes -1, the program prints "Thx! Bye!" and ends.
+
+import java.util.Scanner;
+ 
+public class Application {
+
+    public static void main(String[] args) {
+
+Scanner scanner = new Scanner(System.in);
+
+int num =0;
+
+while(num != -1){
+    
+    System.out.println("Write numbers:");
+num = Integer.valueOf(scanner.nextLine());
+
+
+                }
+    {
+System.out.println("KThxBye");
+
+    }
+        }
+}

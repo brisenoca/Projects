@@ -1,0 +1,17 @@
+// a method public static String word(). The method must return a 
+//string of your choice.
+
+import java.util.Scanner;
+ 
+public class Application {
+
+    public static void main(String[] args) {
+
+Scanner scanner = new Scanner(System.in);
+
+System.out.println("The method returned the string " + word());
+        }
+    public static String word(){
+        return "word.";
+    }
+       }

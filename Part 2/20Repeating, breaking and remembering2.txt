@@ -1,0 +1,32 @@
+\\Part 2 - Sum:  Extend the program so that it prints the sum 
+\\of the numbers (not including the -1) the user
+\\has written.
+
+import java.util.Scanner;
+ 
+public class Application {
+
+    public static void main(String[] args) {
+
+Scanner scanner = new Scanner(System.in);
+
+int num =0;
+int sum =0;
+while(num != -1){
+    
+    System.out.println("Write numbers:");
+num = Integer.valueOf(scanner.nextLine());
+
+if(num== -1){
+    break;
+}
+
+sum = num + sum;
+
+                }
+    {
+System.out.println("KThxBye");
+System.out.println(sum);
+    }
+        }
+}

@@ -1,0 +1,21 @@
+//Print the numbers from the number passed as a parameter down to one.
+
+import java.util.Scanner;
+ 
+public class Application {
+
+    public static void main(String[] args) {
+
+Scanner scanner = new Scanner(System.in);
+
+    printUntilNumber(2);
+        }
+    
+    public static void printUntilNumber(int num) {
+        int i=num;
+        while (i>0){
+        System.out.println(i);
+        i--;
+   }
+}
+}

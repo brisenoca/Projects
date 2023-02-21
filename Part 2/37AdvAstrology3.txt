@@ -1,0 +1,66 @@
+//Define a method called christmasTree(int height) that prints the correct Christmas
+// tree. The Christmas tree consists of a triangle with the specified height as well
+// as the base. The base is two stars high and three stars wide, and is placed at the 
+//center of the triangle's bottom. The tree is to be constructed by using the methods
+// printSpaces and printStars.
+
+import java.util.Scanner;
+ 
+public class Application 
+{
+    public static void main(String[] args) {
+
+Scanner scanner = new Scanner(System.in);
+
+christmasTree(20);
+    }
+    
+public static void printSpaces(int number) 
+    {
+     for (int i=1; i<=number; i++)
+     {
+     System.out.print(" "); 
+     }
+    }
+
+public static void printStars(int number) 
+    {
+        for(int i=1; i<=number; i++)
+         {
+         System.out.print("*");
+         }
+    }
+
+public static void printTriangle(int size)
+  {
+    int add=1;
+    int ct=0;
+   
+   while (ct<size)
+    {
+     {
+    printSpaces(size-1);
+    printStars(add);
+    System.out.println("");
+     add=add+2;
+     size--;
+     }
+    }
+  }
+
+public static void treeBase (int number){
+
+    for(int i=1; i<=2; i++)
+    {
+    printSpaces(number-2);
+    printStars(3);
+    System.out.println("");
+    }
+}
+
+public static void christmasTree(int height)
+   {
+  printTriangle(height);
+  treeBase(height);
+   }
+}

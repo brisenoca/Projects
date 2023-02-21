@@ -1,0 +1,25 @@
+
+import java.util.Scanner;
+ 
+public class Application {
+
+    public static void main(String[] args) {
+
+        // Write the code here. You can run the code by 
+
+Scanner scanner = new Scanner(System.in);
+
+while (true) {
+    System.out.println("Give a number");
+    int num = Integer.valueOf(scanner.nextLine());
+    
+    if (num == 4){
+        break;
+    }
+    
+    System.out.println("You input: " + num);
+}
+
+
+}
+ }

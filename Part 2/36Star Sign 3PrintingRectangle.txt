@@ -1,0 +1,41 @@
+//A method called printRectangle(int width, int height) that prints 
+//the correct rectangle by using the printStars method.
+
+import java.util.Scanner;
+ 
+public class Application {
+
+    public static void main(String[] args) {
+
+Scanner scanner = new Scanner(System.in);
+
+ printRectangle(17,3);
+    }
+    
+public static void printStars(int number) 
+{
+    // you can print one star with the command
+    for (int i=1; i <= number; i++ ) 
+    {
+
+     System.out.print("*"); 
+    }
+     System.out.println("");
+}
+
+public static void printSquare(int number)
+    {
+
+  for (int i=1; i <= number; i++)
+     {
+printStars(number);
+     }
+    }
+public static void  printRectangle(int width, int height)
+{
+for (int i=1; i<=height ; i++)
+       {
+printStars(width);
+       }
+}
+}

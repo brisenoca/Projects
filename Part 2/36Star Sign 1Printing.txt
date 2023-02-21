@@ -1,0 +1,28 @@
+//Define a method called printStars that prints the given number of stars and a 
+//line break.
+
+import java.util.Scanner;
+ 
+public class Application {
+
+    public static void main(String[] args) {
+
+Scanner scanner = new Scanner(System.in);
+
+    printStars(5);
+    printStars(3);
+    printStars(9);
+
+    }
+    
+public static void printStars(int number) {
+    
+    // you can print one star with the command
+    for (int i=1; i <= number; i++ ) {
+
+        System.out.print("*");
+    
+}
+     System.out.println("");
+}
+}

@@ -1,0 +1,23 @@
+import java.util.Scanner;
+ 
+public class Application {
+
+    public static void main(String[] args) {
+
+        // Write the code here. You can run the code by 
+        // selecting Run->Run File from the menu or by pressing Shift+F6
+Scanner scanner = new Scanner(System.in);
+
+System.out.println("Please enter string 1:");
+String first = scanner.nextLine();
+
+System.out.println("Please enter string 2:");
+String second = scanner.nextLine();
+
+if (first.equals(second)){
+    System.out.println("Same!");
+}else{
+    System.out.println("Different!");
+}
+    }
+}

@@ -1,0 +1,17 @@
+//Seperate method to print text when method is called upon.
+
+import java.util.Scanner;
+ 
+public class Application {
+
+    public static void main(String[] args) {
+
+Scanner scanner = new Scanner(System.in);
+
+
+printText();
+        }
+    public static void printText() {
+        System.out.println("In a hole in the ground there lived a method");
+    }
+}

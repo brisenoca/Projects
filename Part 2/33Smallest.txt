@@ -1,0 +1,23 @@
+//A two-parameter method "smallest" that returns the smaller 
+//of the two numbers passed to it as parameters.
+
+import java.util.Scanner;
+ 
+public class Application {
+
+    public static void main(String[] args) {
+
+Scanner scanner = new Scanner(System.in);
+
+    int answer =  smallest(100, 5);
+    System.out.println("Smallest: " + answer);
+    }
+
+public static int smallest(int number1, int number2) 
+    {   
+    if(number1 > number2){
+    return number2;
+                         }
+    else {return number1;}
+    }
+}

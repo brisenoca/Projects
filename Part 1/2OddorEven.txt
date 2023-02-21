@@ -1,0 +1,22 @@
+import java.util.Scanner;
+ 
+public class Application {
+
+    public static void main(String[] args) {
+
+        // Write the code here. You can run the code by 
+        // selecting Run->Run File from the menu or by pressing Shift+F6
+Scanner scanner = new Scanner(System.in);
+
+System.out.println("Please enter a number:");
+
+int number = Integer.valueOf(scanner.nextLine());
+int remainder = 100 % number;
+
+if (remainder == 0){
+    System.out.println("The number "+ number + " is even");
+}else {
+    System.out.println("The number "+ number +" is odd");
+}
+    }
+}

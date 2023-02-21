@@ -1,0 +1,39 @@
+
+import java.util.Scanner;
+
+public class AverageOfPositiveNumbers {
+
+    public static void main(String[] args) {
+
+        // Write the code here. You can run the code by 
+        // selecting Run->Run File from the menu or by pressing Shift+F6
+        Scanner scanner = new Scanner(System.in);
+
+        int numberCount = 0;
+        double sumOfPos = 0;
+        int neg = 0;
+
+        while (true) {
+            System.out.println("Give a number: ");
+            int num = Integer.valueOf(scanner.nextLine());
+
+            //Number count
+            if (num > 0) {
+
+                sumOfPos = num + sumOfPos;
+
+                numberCount = numberCount + 1;
+                System.out.println("Please give another number");
+            }
+            if (num == 0 || numberCount == 0) {
+                System.out.println("Cannot calculate the average");
+            }
+
+            // Breaks out of loop
+            if (num == 0) {
+                break;
+            }
+        }
+        System.out.println("Average: " + (sumOfPos / numberCount));
+    }
+}

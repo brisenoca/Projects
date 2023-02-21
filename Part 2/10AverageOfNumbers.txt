@@ -1,0 +1,34 @@
+
+import java.util.Scanner;
+
+public class AverageOfNumbers {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Write the code here. You can run the code by 
+        // selecting Run->Run File from the menu or by pressing Shift+F6
+        int numberCount = 0;
+        double sumOfNum = 0;
+
+        while (true) {
+            System.out.println("Give a number: ");
+            int num = Integer.valueOf(scanner.nextLine());
+
+            //Number count
+            if (num > 0 || num < 0) {
+
+                sumOfNum = num + sumOfNum;
+
+                numberCount = numberCount + 1;
+
+            }
+            // Breaks out of loop
+            if (num == 0) {
+                break;
+            }
+        }
+
+        System.out.println("Average of the numbers: " + ((double) (sumOfNum / numberCount)));
+    }
+}

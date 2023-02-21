@@ -1,0 +1,40 @@
+\\Part3: Sum and the number of numbers
+\\Extend the program so that it also prints the number of 
+\\numbers (not including the -1) the user has written.
+
+import java.util.Scanner;
+ 
+public class Application {
+
+    public static void main(String[] args) {
+
+Scanner scanner = new Scanner(System.in);
+
+int num =0;
+//sum of the numbers entered
+int sum =0;
+//counter
+int i=0;
+//while the number entered is not equal to -1, the loop applies.
+while(num != -1){
+    
+    
+    System.out.println("Write numbers:");
+num = Integer.valueOf(scanner.nextLine());
+
+if(num== -1){
+    break;
+}
+//Add numbers to the sum variable
+sum = num + sum;
+//increase counter count
+i++;
+
+                }
+    {
+System.out.println("KThxBye");
+System.out.println("Sum: " + sum);
+System.out.println("Numbers: " + i);
+    }
+        }
+}

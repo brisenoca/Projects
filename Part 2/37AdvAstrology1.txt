@@ -1,0 +1,36 @@
+//a method called printSpaces(int number) that produces the number of spaces 
+//specified by number. The method does not print the line break.
+
+//a method called printSpaces(int number) that produces the number of spaces 
+//specified by number. The method does not print the line break.
+
+import java.util.Scanner;
+ 
+public class Application {
+
+    public static void main(String[] args) {
+
+Scanner scanner = new Scanner(System.in);
+
+ printStars(4);
+    }
+    
+public static void printSpaces(int number) 
+    {
+    for (int i=1; i <= number; i++ ) 
+     {
+     System.out.print(""); 
+     }
+    }
+
+public static void printStars(int number) 
+    {
+    for (int i=1; i <= number; i++ ) 
+     {
+     System.out.print("*");
+     }
+    
+     System.out.println("");
+    }
+
+}

@@ -1,0 +1,60 @@
+\\Even and odd numbers
+\\Extend the program so that it prints the number of even 
+\\and odd numbers (excluding the -1).
+
+import java.util.Scanner;
+ 
+public class Application {
+
+    public static void main(String[] args) {
+
+Scanner scanner = new Scanner(System.in);
+
+int num =0;
+//sum of the numbers entered
+int sum =0;
+//counter
+int i=0;
+//Average variable
+ double avg = 0;
+//while the number entered is not equal to -1, the loop applies.
+int eve=0;
+int odd=0;
+
+
+System.out.println("Write numbers:");
+
+while(num != -1){
+    
+num = Integer.valueOf(scanner.nextLine());
+
+if(num== -1){
+    break;
+}
+//Modulus operator determines if number leaves a remainder or not
+//Remainder other than 0 means odd. 0 signifies even.
+if (num % 2 == 0){
+    eve++;
+}
+else {
+    odd++;
+}
+    
+//Add numbers to the sum variable
+sum = num + sum;
+//increase counter count
+i++;
+//Average
+avg = (double)sum/i;
+
+                }
+    {
+System.out.println("KThxBye");
+System.out.println("Sum: " + sum);
+System.out.println("Numbers: " + i);
+System.out.println("Average: " +  (double) avg);
+System.out.println("Even: " + eve);
+System.out.println("Odd: " + odd);
+    }
+        }
+}

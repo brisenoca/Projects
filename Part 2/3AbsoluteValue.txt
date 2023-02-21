@@ -1,0 +1,22 @@
+import java.util.Scanner;
+ 
+public class Application {
+
+    public static void main(String[] args) {
+
+        // Converts user input into an absolute value.
+
+Scanner scanner = new Scanner(System.in);
+
+System.out.println("Enter a number:");
+int num = Integer.valueOf(scanner.nextLine());
+
+if (num < 0){
+    int pos = num *(-1);
+    System.out.println(pos);
+}else if(num > 0){
+   System.out.println(num);
+}
+
+}
+ }
